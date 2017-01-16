@@ -1,13 +1,9 @@
 "use strict";
 
-var util = require( './lib/util' );
+var generate = require( './lib/util' );
 
-var regexp = new RegExp( /GetTranslation\(\s*['|"](\S*)['|"]\s*\)/g );
+var regex = /GetTranslation\(\s*['|\"](\S*)['|\"]\s*\)/g;
+var filesPath = "D:\\Projects\\UTNet4_MC\\utNetPresentationLayer\\utNetAgentApplication\\pages\\client\\transfer\\a2c";
+var translationFilePath = "D:\\Projects\\UTNet4_MC\\utNetDataLayer\\utNetData\\system\\MicroCredAgents\\utNetTranslations.json";
 
-var files = util.walk( "PATH_TO_FILE_OR_FOLDER" );
-
-var matches = util.search( regexp, files );
-
-var translationFile = require( "PATH_TO_JSON_TRANSLATIONS_FILE" );
-
-util.createAndSaveExcel( matches, translationFile );
+generate( regex, filesPath, translationFilePath );
