@@ -1,6 +1,6 @@
 {
   "name": "search-regex-in-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple plugin to search for regex matches in files and folders.",
   "main": "./util/util.js",
   "scripts": {
