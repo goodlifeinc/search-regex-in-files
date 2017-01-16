@@ -1,0 +1,20 @@
+{
+  "name": "search-regex-in-files",
+  "version": "1.0.0",
+  "description": "Simple plugin to search for regex matches in files and folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "regeg",
+    "files",
+    "folders"
+  ],
+  "author": "Evgeni Atanasov",
+  "license": "ISC",
+  "dependencies": {
+    "msexcel-builder": "0.0.2"
+  }
+}
